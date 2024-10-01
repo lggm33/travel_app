@@ -20,7 +20,7 @@ function Hero() {
             <div className="flex items-center gap-2">
                 {Array(5).fill(1).map((_, i) => (
                     <Image
-                        src='/star.svg'
+                        src='./star.svg'
                         key={i}
                         alt='star'
                         width={24}
@@ -43,7 +43,7 @@ function Hero() {
             <Button
                 type="button"
                 title="How we work?"
-                icon="/play.svg"
+                icon="./play.svg"
                 variant="btn_white_text"
             />
         </div>
