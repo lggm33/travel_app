@@ -1,6 +1,7 @@
 import { PEOPLE_URL } from "@/constants";
 import Image from "next/image";
 
+
 interface CampProps {
     backgrounImage: string;
      title: string;
@@ -10,10 +11,13 @@ interface CampProps {
 
 const CampSite = (props: CampProps) => {
 
+    const isProd = process.env.NODE_ENV === 'production';
+
+
     const { backgrounImage, title, subtitle, peopleJoined} = props;
 
     return (
-        <div className={`h-full w-full min-w-[1100px] bg-[url('/travel_app/img-1.png')] bg-cover bg-no-repeat lg:rounded-5xl 2xl:rounded-5xl`}>
+        <div className={`h-full w-full min-w-[1100px] bg-cover bg-no-repeat lg:rounded-5xl 2xl:rounded-5xl`} style={{ backgroundImage: `url(${isProd ? "/travel_app/" : ""} ${backgrounImage})` }}>
             <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
                 <div className="flexCenter gap-4">
                     <div className="rounded-full bg-green-50 p-4">
@@ -24,9 +28,9 @@ const CampSite = (props: CampProps) => {
                             height={28}
                         />
                     </div>
-                    <div className="">
+                    <div >
                         <h4 className="bold-20 text-white">{title}</h4>
-                        <p className="regular-16 text-gray-20">{subtitle}</p>
+                        <p className="regular-16  text-gray-20">{subtitle}</p>
                     </div>
                 </div>
                 <div className="flexCenter gap-6">
@@ -57,13 +61,13 @@ function Camp() {
         <div className='flex h-[340px] w-full pb-5 items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]'>
             
             <CampSite
-                backgrounImage="bg-bg-img-1"
+                backgrounImage="./img-1.png"
                 title="Putuk Truno Camp"
                 subtitle="Prigen, Pasuruan"
                 peopleJoined="50+ Joined"
             />
             <CampSite
-                backgrounImage="bg-bg-img-2"
+                backgrounImage="/img-2.png"
                 title="Mounte Skai Camp"
                 subtitle="Somewhere in the Wilderness"
                 peopleJoined="50+ Joined"
