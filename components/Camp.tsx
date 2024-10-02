@@ -17,7 +17,7 @@ const CampSite = (props: CampProps) => {
     const { backgrounImage, title, subtitle, peopleJoined} = props;
 
     return (
-        <div className={`h-full w-full min-w-[1100px] bg-cover bg-no-repeat lg:rounded-5xl 2xl:rounded-5xl`} style={{ backgroundImage: `url(${isProd ? "/travel_app/" : ""} ${backgrounImage})` }}>
+        <div className={`h-full w-full min-w-[1100px] bg-cover bg-no-repeat lg:rounded-5xl 2xl:rounded-5xl`} style={{ backgroundImage: `url(${isProd ? "/travel_app/" : ""}${backgrounImage})` }}>
             <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
                 <div className="flexCenter gap-4">
                     <div className="rounded-full bg-green-50 p-4">
@@ -61,13 +61,13 @@ function Camp() {
         <div className='flex h-[340px] w-full pb-5 items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]'>
             
             <CampSite
-                backgrounImage="./img-1.png"
+                backgrounImage="img-1.png"
                 title="Putuk Truno Camp"
                 subtitle="Prigen, Pasuruan"
                 peopleJoined="50+ Joined"
             />
             <CampSite
-                backgrounImage="/img-2.png"
+                backgrounImage="img-2.png"
                 title="Mounte Skai Camp"
                 subtitle="Somewhere in the Wilderness"
                 peopleJoined="50+ Joined"
