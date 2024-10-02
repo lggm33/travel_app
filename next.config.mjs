@@ -4,8 +4,8 @@ const isProd = process.env.NODE_ENV === 'production';
 console.log({isProd})
 
 const nextConfig = {
-  basePath: isProd ? '/travel_app' : '',
-  assetPrefix: isProd ? '/travel_app/' : '',
+  basePath: '/travel_app' ,
+  assetPrefix: '/travel_app/' ,
 };
 
 export default nextConfig;
