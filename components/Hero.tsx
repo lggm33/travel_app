@@ -3,10 +3,13 @@ import Button from "./ui/Button"
 import LocationCard from "./ui/LocationCard"
 
 function Hero() {
+
+    const isProd = process.env.NODE_ENV === 'production';
+
   return (
 
     <section className='max-container padding-container flex flex-col py-10 pb-32'>
-        <div className='hero-map'/>
+        <div className='hero-map' style={{ backgroundImage: `url('${isProd ? "/travel_app/" : ""}/pattern-bg.png'` }}/>
 
         {/* left side */}
 
