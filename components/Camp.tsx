@@ -38,7 +38,7 @@ const CampSite = (props: CampProps) => {
                     {PEOPLE_URL.map((url) => (
                         <Image
                             className="inline-block h-10 w-10 rounded-full"
-                            src={url}
+                            src={`${isProd ? '/travel_app' : ''}${url}`}
                             key={url}
                             alt="person"
                             width={52}
