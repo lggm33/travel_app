@@ -73,7 +73,10 @@ function Camp() {
                 peopleJoined="50+ Joined"
             />
         </div>
-
+        <div className="max-w-[500px] w-full mx-auto mt-10 bg-green-50 rounded-5xl p-10">
+            <h4 className="regular-24 text-white"><strong>Feeling Lost</strong> And Not Knowing The Way?</h4>
+            <p className=" regular-14 mt-5 text-white">Starting from the anxiety of the climbers when visiting a new climbing location, the possibility of getting lost is very large. That's why we are here for those of you who want to start an adventure</p>
+        </div>
     </section>
   )
 }
