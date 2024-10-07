@@ -16,7 +16,7 @@ function Guide() {
       </div>
       <div className='flexCenter flex-col max-container relative w-full my-10'>
         <Image
-          src="/boat.png"
+          src={`${isProd ? "/travel_app/" : ""}/boat.png`}
           alt="boat"
           width={1440}
           height={580}
