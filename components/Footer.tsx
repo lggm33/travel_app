@@ -12,7 +12,7 @@ function Footer() {
         <div className='flex flex-col items-start justify-center gap-[10%] md:flex-row'>
           <Link href='/' className='mb-10'>
             <Image
-              src={`${isProd ? "/travel_app" : ""}/hilink-logo.svg`}
+              src='/hilink-logo.svg'
               alt='logo'
               width={74}
               height={29}
@@ -49,7 +49,7 @@ function Footer() {
             {SOCIALS.links.map((link) => (
               <Link href='/' key={link}>
                 <Image
-                  src={link}
+                  src={`${isProd ? "/travel_app" : ""}${link}`}
                   alt='logo'
                   width={24}
                   height={24}
