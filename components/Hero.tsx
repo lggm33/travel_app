@@ -8,7 +8,7 @@ function Hero() {
 
   return (
 
-    <section className='max-container padding-container flex flex-col py-10 pb-32'>
+    <section id="home" className='max-container padding-container flex flex-col py-10 pb-32 mt-16 scroll-mt-24'>
         <div className='hero-map' style={{ backgroundImage: `url('${isProd ? "/travel_app/" : ""}/pattern-bg.png'` }}/>
 
         {/* left side */}

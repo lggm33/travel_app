@@ -6,7 +6,7 @@ function Guide() {
   const isProd = process.env.NODE_ENV === 'production'
 
   return (
-    <section >
+    <section id='guide' className='scroll-mt-24'>
       <div className='flex flex-col justify-between lg:flex- p-10'>
         <div className='w-1/2'>
           <h4 className='uppercase regular-18 -mt-1 mb-3 text-green-50'>We are here for you</h4>
