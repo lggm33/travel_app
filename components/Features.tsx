@@ -38,7 +38,7 @@ function Features() {
       <div className='flex mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 relative w-full justify-end'>
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image
-            src="/phone.png"
+            src= {`${isProd ? '/travel_app' : ''}/phone.png`}
             alt='phone'
             width={440}
             height={1000}

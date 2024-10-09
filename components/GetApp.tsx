@@ -19,20 +19,20 @@ function GetApp() {
               <Button
                 type='button'
                 title='App Store'
-                icon='/apple.svg'
+                icon={`${isProd ? '/travel_app' : ''}/apple.svg`}
                 variant='btn_white'
               />
               <Button
                 type='button'
                 title='Play Store'
-                icon='/android.svg'
+                icon={`${isProd ? '/travel_app' : ''}/android.svg`}
                 variant='btn_dark_green_outline'
               />
             </div>
           </div>
           <div className='flex-1 flex items-center justify-end'>
             <Image
-              src={isProd ? "/travel_app/" : "" + '/phones.png'}
+              src={isProd ? "/travel_app" : "" + '/phones.png'}
               alt='phones'
               width={550}
               height={870}

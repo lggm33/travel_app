@@ -23,7 +23,7 @@ const Navbar = () => {
   
 
   return (
-    <nav className=" flexBetween w-full padding-container z-50 py-5 fixed bg-white">
+    <nav className=" flexBetween w-full padding-container z-50 py-5 fixed bg-white max-w-7xl">
         <Link href="/">
             <Image src="./hilink-logo.svg" alt="logo" width={74} height={29} />
         </Link>
